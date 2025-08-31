@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rasoi Rider - Home-Cooked Tiffin Service</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #fff7ed 0%, #ffe4c7 100%);
+            position: relative;
+            color: #222; /* Darker for better contrast */
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+        h1, h2, h3, h4, h5, h6, .font-poppins {
+            font-family: 'Poppins', sans-serif !important;
+            font-weight: 700 !important;
+            letter-spacing: 0.02em;
+            color: #1a1a1a; /* Even darker for headings */
+            text-shadow: 0 2px 8px rgba(255,255,255,0.25); /* Optional: subtle shadow for readability */
+        }
+        p, li, a, span, .font-inter {
+            font-family: 'Inter', sans-serif !important;
+            font-weight: 400;
+            letter-spacing: 0.01em;
+            color: #222; /* Darker for body text */
+            text-shadow: 0 1px 4px rgba(255,255,255,0.18); /* Optional: subtle shadow */
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            z-index: -1;
+            opacity: 0.15;
+            background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='20' cy='20' r='2' fill='%23ff9800'/%3E%3Ccircle cx='10' cy='10' r='1.5' fill='%23ff9800'/%3E%3Ccircle cx='30' cy='30' r='1.5' fill='%23ff9800'/%3E%3C/svg%3E");
+            background-repeat: repeat;
+            pointer-events: none;
+        }
+        .hero-bg {
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.2)), url('assets/Gemini_Generated_Image_6kmxiz6kmxiz6kmx.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* This makes the image stay still */
+        }
+        .font-poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold font-poppins text-orange-600">Rasoi Rider</a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#menu" class="text-gray-600 hover:text-orange-500 transition duration-300">Menu</a>
+                <a href="#plans" class="text-gray-600 hover:text-orange-500 transition duration-300">Plans</a>
+                <a href="#why-us" class="text-gray-600 hover:text-orange-500 transition duration-300">Why Us</a>
+                <a href="#contact" class="text-gray-600 hover:text-orange-500 transition duration-300">Contact</a>
+            </div>
+            <a href="#contact" class="bg-orange-500 text-white font-semibold px-4 py-2 rounded-lg hover:bg-orange-600 transition duration-300">Order Now</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg">
+        <div class="container mx-auto px-6 py-32 text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold font-poppins leading-tight mb-4 text-white drop-shadow-lg">Healthy, Homely Meals.</h1>
+            <h2 class="text-4xl md:text-6xl font-extrabold font-poppins leading-tight mb-6 text-white drop-shadow-lg">Delivered to Your Doorstep.</h2>
+            <p class="text-lg md:text-xl max-w-2xl mx-auto mb-8 text-white drop-shadow-md">Tired of cooking? Craving that authentic 'Maa ke haath ka swaad'? Our daily tiffin service brings you nutritious and delicious home-cooked food, made with love and fresh ingredients.</p>
+            <a href="#plans" class="bg-white text-orange-600 font-bold py-3 px-8 rounded-full text-lg hover:bg-gray-200 transition duration-300 transform hover:scale-105">View Subscription Plans</a>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12 font-poppins">How It Works</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+                <!-- Step 1 -->
+                <div class="flex flex-col items-center">
+                    <div class="bg-orange-100 rounded-full p-6 mb-4">
+                        <svg class="w-12 h-12 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-700 mb-2">Choose Your Plan</h3>
+                    <p class="text-gray-500">Select from our flexible weekly or monthly subscription plans that fit your needs.</p>
+                </div>
+                <!-- Step 2 -->
+                <div class="flex flex-col items-center">
+                    <div class="bg-green-100 rounded-full p-6 mb-4">
+                        <svg class="w-12 h-12 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7.014A8.003 8.003 0 0112 3c1.398 0 2.743.57 3.714 1.543C18.5 6.5 19 9 19 11c2 1 2.343 2.343 2.343 2.343a8 8 0 01-3.686 5.314z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-700 mb-2">We Cook Fresh</h3>
+                    <p class="text-gray-500">Our chefs prepare your meals fresh every day using the best local ingredients, just like at home.</p>
+                </div>
+                <!-- Step 3 -->
+                <div class="flex flex-col items-center">
+                    <div class="bg-blue-100 rounded-full p-6 mb-4">
+                        <svg class="w-12 h-12 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-700 mb-2">On-Time Delivery</h3>
+                    <p class="text-gray-500">Your delicious tiffin is delivered straight to your home or office, right on time for lunch or dinner.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Sample Menu Section -->
+    <section id="menu" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12 font-poppins">A Taste of Our Odia Weekly Menu</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Day 1 (Veg, now green) -->
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold text-green-600 mb-3">Monday (Veg)</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><span class="font-semibold">Dal:</span> Dalma</li>
+                        <li><span class="font-semibold">Tarkari:</span> Aloo Potala Rasa</li>
+                        <li><span class="font-semibold">Rice:</span> Arna</li>
+                        <li><span class="font-semibold">Roti:</span> 3 Phulkas</li>
+                        <li><span class="font-semibold">Side:</span> Bhaja</li>
+                        <li><span class="font-semibold text-orange-500">Calories:</span> ~550 kcal</li>
+                    </ul>
+                </div>
+                <!-- Day 2 (Non-Veg, now orange) -->
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold text-orange-600 mb-3">Tuesday (Non-Veg Option)</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><span class="font-semibold">Dal:</span> Muga Dali</li>
+                        <li><span class="font-semibold">Veg Tarkari:</span> Janhi Aloo Posto</li>
+                        <li><span class="font-semibold text-red-600">Non-Veg:</span> Macha Besara</li>
+                        <li><span class="font-semibold">Rice:</span> Arna</li>
+                        <li><span class="font-semibold">Roti:</span> 3 Phulkas</li>
+                        <li><span class="font-semibold text-orange-500">Calories:</span> ~650 kcal</li>
+                    </ul>
+                </div>
+                <!-- Day 3 (Veg, now green) -->
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold text-green-600 mb-3">Wednesday (Veg)</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><span class="font-semibold">Dal:</span> Buta Dali</li>
+                        <li><span class="font-semibold">Tarkari:</span> Dahi Baigana</li>
+                        <li><span class="font-semibold">Rice:</span> Arna</li>
+                        <li><span class="font-semibold">Roti:</span> 3 Phulkas</li>
+                        <li><span class="font-semibold">Side:</span> Salad</li>
+                        <li><span class="font-semibold text-orange-500">Calories:</span> ~520 kcal</li>
+                    </ul>
+                </div>
+                <!-- Day 4 (Non-Veg, now orange) -->
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold text-orange-600 mb-3">Thursday (Non-Veg Option)</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><span class="font-semibold">Dal:</span> Harada Dali</li>
+                        <li><span class="font-semibold">Veg Tarkari:</span> Chhatu Besara</li>
+                        <li><span class="font-semibold text-red-600">Non-Veg:</span> Chicken Kasa</li>
+                        <li><span class="font-semibold">Rice:</span> Kanika</li>
+                        <li><span class="font-semibold">Roti:</span> 3 Phulkas</li>
+                        <li><span class="font-semibold text-orange-500">Calories:</span> ~700 kcal</li>
+                    </ul>
+                </div>
+                <!-- Day 5 (Veg, now green) -->
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold text-green-600 mb-3">Friday (Veg)</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><span class="font-semibold">Dal:</span> Muga Dali</li>
+                        <li><span class="font-semibold">Tarkari:</span> Santula</li>
+                        <li><span class="font-semibold">Rice:</span> Arna</li>
+                        <li><span class="font-semibold">Roti:</span> 3 Phulkas</li>
+                        <li><span class="font-semibold">Side:</span> Papad</li>
+                        <li><span class="font-semibold text-orange-500">Calories:</span> ~530 kcal</li>
+                    </ul>
+                </div>
+                <!-- Day 6 (Non-Veg, now orange) -->
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold text-orange-600 mb-3">Saturday (Non-Veg Option)</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><span class="font-semibold">Dal:</span> Chana Dali</li>
+                        <li><span class="font-semibold">Veg Tarkari:</span> Kadali Manja Rai</li>
+                        <li><span class="font-semibold text-red-600">Non-Veg:</span> Mutton Kasa</li>
+                        <li><span class="font-semibold">Rice:</span> Arna</li>
+                        <li><span class="font-semibold">Roti:</span> 3 Phulkas</li>
+                        <li><span class="font-semibold text-orange-500">Calories:</span> ~750 kcal</li>
+                    </ul>
+                </div>
+            </div>
+             <p class="text-center mt-8 text-gray-600">*Menu changes weekly to provide variety. Contact us for this week's full menu and to customize your plan!</p>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-us" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12 font-poppins">Why You'll Love Our Tiffins</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="flex items-center justify-center h-20 w-20 mx-auto bg-green-100 text-green-600 rounded-full mb-4">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v.01"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-700">100% Homemade</h3>
+                </div>
+                <div class="text-center">
+                    <div class="flex items-center justify-center h-20 w-20 mx-auto bg-orange-100 text-orange-600 rounded-full mb-4">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m12 0a2 2 0 100-4m0 4a2 2 0 110-4m-6 0v2m0-2a2 2 0 100 4m0-4a2 2 0 110 4"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-700">Fresh Ingredients</h3>
+                </div>
+                <div class="text-center">
+                    <div class="flex items-center justify-center h-20 w-20 mx-auto bg-red-100 text-red-600 rounded-full mb-4">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-700">No Preservatives</h3>
+                </div>
+                <div class="text-center">
+                    <div class="flex items-center justify-center h-20 w-20 mx-auto bg-blue-100 text-blue-600 rounded-full mb-4">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-700">New Menu Daily</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Plans Section -->
+    <section id="plans" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12 font-poppins">Our Tiffin Plans</h2>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-8">
+                <!-- Weekly Plan -->
+                <div class="bg-white rounded-lg shadow-xl p-8 w-full max-w-sm border-t-4 border-orange-400">
+                    <h3 class="text-2xl font-bold text-center mb-2">Weekly Plan</h3>
+                    <p class="text-gray-500 text-center mb-6">Perfect for trying us out!</p>
+                    <div class="text-center my-6">
+                        <span class="text-4xl font-bold">₹700</span>
+                        <span class="text-gray-500">/ week (Veg)</span>
+                    </div>
+                    <ul class="space-y-4 text-gray-600 mb-8">
+                        <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> 6 Lunches or Dinners</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> 1 Dal, 1 Tarkari, Rice, Roti</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Free Delivery</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 text-gray-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> Non-veg options available</li>
+                    </ul>
+                    <a href="#contact" class="block w-full text-center bg-orange-400 text-white font-semibold py-3 rounded-lg hover:bg-orange-500 transition duration-300">Choose Weekly</a>
+                </div>
+
+                <!-- Monthly Plan -->
+                <div class="bg-white rounded-lg shadow-2xl p-8 w-full max-w-sm border-t-4 border-orange-600 transform md:scale-105 relative">
+                    <span class="absolute left-1/2 -translate-x-1/2 -top-6 md:-top-10 bg-orange-600 text-white text-xs md:text-sm font-bold px-3 py-1 rounded-full whitespace-nowrap z-10 block text-center w-max">
+                        MOST POPULAR
+                    </span>
+                    <h3 class="text-2xl font-bold text-center mb-2 mt-6 md:mt-10">Monthly Plan</h3>
+                    <p class="text-gray-500 text-center mb-6">Best value and convenience.</p>
+                    <div class="text-center my-6">
+                        <span class="text-4xl font-bold">₹2800</span>
+                        <span class="text-gray-500">/ month (Veg)</span>
+                    </div>
+                    <ul class="space-y-4 text-gray-600 mb-8">
+                         <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> 24 Lunches or Dinners</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> 1 Dal, 1 Tarkari, Rice, Roti</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Free Delivery & Non-veg options</li>
+                         <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Special weekend meal once a month</li>
+                    </ul>
+                    <a href="#contact" class="block w-full text-center bg-orange-600 text-white font-semibold py-3 rounded-lg hover:bg-orange-700 transition duration-300">Choose Monthly</a>
+                </div>
+            </div>
+             <p class="text-center mt-8 text-gray-600">*Non-veg meals may have additional charges. Please call to customize your plan.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-orange-50">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4 font-poppins">Ready to Enjoy Homely Meals?</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto mb-8">Starting your subscription is easy! Just give us a call or send a message on WhatsApp. We'll get back to you to confirm your details and delivery schedule.</p>
+            <div class="inline-block bg-white p-6 rounded-lg shadow-md">
+                <p class="text-lg text-gray-700 mb-2">Call or WhatsApp us at:</p>
+                <a href="tel:+919090168727" class="text-2xl font-bold text-orange-600 hover:text-orange-700 transition duration-300">+91 90901 68727</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 text-gray-800 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Rasoi Rider. All Rights Reserved.</p>
+            <p class="text-gray-500">Made with ❤️ for the taste of home.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
